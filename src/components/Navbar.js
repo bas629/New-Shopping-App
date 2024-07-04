@@ -24,11 +24,11 @@ function Navbar() {
         
             <div className='text-white flex my-auto gap-5'>
              <NavLink to="/" >Home</NavLink>
-             <div>
-             <NavLink to="/Cart" className="relative "  ><IoIosCart fontSize="30px" ></IoIosCart></NavLink> 
+             <div className="relative " >
+             <NavLink to="/Cart"  ><IoIosCart fontSize="30px" ></IoIosCart></NavLink> 
              {
                 cartNo>0 &&
-                <div className=" absolute w-5 h-5 text-white text-center my-auto  bg-red-600 rounded-full top-[1.25rem] right-[330px]"  >
+                <div className=" absolute w-5 h-5 text-white text-center my-auto  bg-red-600 rounded-full bottom-3 left-4  animate-bounce "  >
                 {cartNo}
                 </div> }
               </div>

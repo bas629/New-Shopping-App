@@ -34,15 +34,15 @@ function Cart() {
 
 
   
-    <div className='flex flex-row justify-center gap-3 mt-5' >
+    <div className='flex flex-row justify-center gap-3 mt-5 flex-wrap-reverse' >
       {  cart.length >0   ?
       
       
     (   
-     <div className=' w-[40%]  flex flex-col ' >
+     <div className=' w-[70%]  flex flex-col   ' >
          { cart.map((data)=>(
             <div >
-          <div key={data.id}  className='flex flex-row  mx-auto  gap-3  p-5' > 
+          <div key={data.id}  className='flex flex-row  mx-auto  gap-3  p-5 flex-wrap' > 
           <img src={data.image} className='box'></img>
           <div className='flex flex-col gap-3'>
           <div className='font-semibold'>{data.title} </div>
