@@ -32,7 +32,7 @@ function Home() {
   
   
     return (
-    <div>
+    <div className='flex flex-row w-[80%] flex-wrap gap-7 justify-center  mx-auto mt-10'>
     {  item.map((items)=>(
         <HomeItem  key={items.id}  items={items}></HomeItem>
 

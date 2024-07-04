@@ -6,7 +6,7 @@ import Cart from "./components/Cart";
 function App() {
   return (
     <div>
-    <Navbar></Navbar>
+    <Navbar  className='sticky top-0'></Navbar>
        <Routes>
          <Route path="/" element={<Home></Home>} ></Route>
          <Route path="/Cart" element={<Cart></Cart>} ></Route>
